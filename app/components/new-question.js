@@ -24,10 +24,10 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         question: this.get('question'),
-        time: this.get('time'),
+        time: this.get('time') ? this.get('time') : ""
       };
       this.set('condition3', false);
-      this.set('condition4', true); 
+      this.set('condition4', true);
       this.sendAction("save2", params);
     }
   }
