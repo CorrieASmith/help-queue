@@ -9,10 +9,12 @@ export default Ember.Component.extend({
     changeit() {
       this.set('condition1', true);
     },
+
     changeit2() {
       this.set('condition2', true);
       this.set('condition1', false);
     },
+
     changeit3() {
       this.set('condition3', true);
       this.set('condition2', false);
@@ -25,7 +27,8 @@ export default Ember.Component.extend({
         time: this.get('time'),
       };
       this.set('condition3', false);
-      this.sendAction();
+      this.set('condition4', true); 
+      this.sendAction("save2", params);
     }
   }
 });
