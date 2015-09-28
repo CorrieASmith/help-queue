@@ -1,12 +1,12 @@
 {{#if condition1}}
 
   <p>Have you slammed your head against your desk more than five times?</p>
-  <button {{action 'changeit2'}}>Yes</button>
+  <button class="btn btn-primary btn-xs"{{action 'changeit2'}}>Yes</button>
 
 {{else if condition2}}
 
   <p>Have you performed a ritualistic sacrifice to the Code God?</p>
-  <button {{action 'changeit3'}}>Yes</button>
+  <button class="btn btn-primary btn-xs"{{action 'changeit3'}}>Yes</button>
 
 {{else if condition3}}
 
@@ -22,13 +22,13 @@
     </div>
   </form>
 
-  <button {{action 'newQuestion'}}>Submit Question</button>
+  <button class="btn btn-primary btn-xs"{{action 'newQuestion'}}>Submit Question</button>
 
 {{else if condition4}}
   <p>Thanks for submitting! Help is on the way.</p>
-  <button {{action 'cancelQuestion'}}>Nevermind, we got it.</button>
+  <button class="btn btn-primary btn-xs"{{action 'cancelQuestion'}}>Nevermind, we got it.</button>
 {{else}}
 
   <p>Have you re-enacted the fax machine smashing scene from Office Space?</p>
-  <button{{action 'changeit'}}>Yes</button>
+  <button class="btn btn-primary btn-xs"{{action 'changeit'}}>Yes</button>
 {{/if}}
