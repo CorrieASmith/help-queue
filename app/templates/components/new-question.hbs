@@ -1,0 +1,19 @@
+{{#if condition1}}
+
+  <p>Have you slammed your head against your desk more than five times?</p>
+  <button {{action 'changeit2'}}>Yes</button>
+
+{{else if condition2}}
+
+  <p>Have you performed a ritualistic sacrifice to the Code God?</p>
+  <button {{action 'changeit3'}}>Yes</button>
+
+{{else if condition3}}
+  <p>FORM</p>
+
+  <form></form>
+{{else}}
+
+  <p>Have you re-enacted the fax machine smashing scene from Office Space?</p>
+  <button{{action 'changeit'}}>Yes</button>
+{{/if}}
