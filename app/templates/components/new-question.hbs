@@ -9,9 +9,20 @@
   <button {{action 'changeit3'}}>Yes</button>
 
 {{else if condition3}}
-  <p>FORM</p>
 
-  <form></form>
+  <form>
+    <div class="form-group">
+      <label for="name">You & Your Pair</label>
+      {{input value=name id="name" placeholder="e.g. Ryan and Michael"}}
+    </div>
+
+    <div class="form-group">
+      <label for="question">Question</label>
+      {{input value=question id="question" placeholder="What's JavaScript?"}}
+    </div>
+  </form>
+
+  <button {{action 'newQuestion'}}>Submit Question</button>
 {{else}}
 
   <p>Have you re-enacted the fax machine smashing scene from Office Space?</p>

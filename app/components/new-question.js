@@ -16,6 +16,16 @@ export default Ember.Component.extend({
     changeit3() {
       this.set('condition3', true);
       this.set('condition2', false);
+    },
+
+    newQuestion() {
+      var params = {
+        name: this.get('name'),
+        question: this.get('question'),
+        time: this.get('time'),
+      };
+      this.set('condition3', false);
+      this.sendAction();
     }
   }
 });
