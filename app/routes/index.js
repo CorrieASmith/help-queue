@@ -8,6 +8,13 @@ var users = [{
 
 export default Ember.Route.extend({
   model() {
-    return users;
+    return this.store.findAll('user');
   },
+
+  actions: {
+    destroyUser(user) {
+      user.destroyUser();
+      this.transitionTo('index');
+    }
+  }
 });
