@@ -1,1 +1,5 @@
-<!-- {{#link-to 'index'}}Home{{/link-to}} "Link is available on application template(footer), isnt needed here" -->
+<ul>
+  {{#each model as |user|}}
+    {{user-tile user=user destroyUser="destroyUser"}}
+  {{/each}}
+</ul>
