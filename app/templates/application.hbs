@@ -1,7 +1,15 @@
-<h2 id="title">Help Queue</h2>
-<hr>
+  <div style="float: left; text-align: left;">
+    <h2 id="title">Help Queue</h2>
+  </div>
+
+  <div style="float: right; text-align:right; margin: 10px 10px 10px;">
+    {{current-date}}
+    <br>
+    {{#link-to 'index'}}Home{{/link-to}}
+  </div>
+
+<hr style="clear: both;">
 
 {{outlet}}
 
 <hr>
-{{#link-to 'index'}}Home{{/link-to}}
