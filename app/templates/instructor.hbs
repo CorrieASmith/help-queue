@@ -1,5 +1,13 @@
 <ul>
+  <h3>Waiting for help: </h3>
   {{#each model as |user|}}
     {{user-tile user=user destroyUser="destroyUser"}}
+  {{/each}}
+</ul>
+
+<ul>
+  <h3>Completed: </h3>
+  {{#each model as |user|}}
+    {{completed-tile user=user}}
   {{/each}}
 </ul>

@@ -1,10 +1,8 @@
 { "users" : [{
-  "name": "Billy Bob",
-  "question": "What is a computer?",
-  "time": ""
-},{
-  "name": "Freddy Floop",
-  "question": "Why did my parents name me this?",
-  "time": ""
+  "name":"sample name",
+  "question":"sample question",
+  "postTime":"11:16 am",
+  "doneTime":"11:17 am",
+  "complete": true
 }]
 }

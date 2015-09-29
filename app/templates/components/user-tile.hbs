@@ -1,6 +1,9 @@
-<li>{{user.name}}'s question at {{user.time}}: {{user.question}}
+{{#if user.isComplete}}
 
+{{else}}
+  <li>{{user.name}}'s question at {{user.postTime}}: "{{user.question}}"
 
-<button class="btn btn-primary btn-xs" {{action 'delete' user}}>Delete Question</button>
+  <button class="btn btn-primary btn-xs" {{action 'delete' user}}>Answer Question</button>
 
-</li>
+  </li>
+{{/if}}
