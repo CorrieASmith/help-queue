@@ -24,7 +24,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         question: this.get('question'),
-        time: this.get('time') ? this.get('time') : ""
+        time: moment() ? moment().format("h:mm a") : ""
       };
       this.set('condition3', false);
       this.sendAction("save2", params);
